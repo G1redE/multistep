@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steps</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="statusbar">
+            <div id="step-1">1</div>
+            <div id="bar1"></div>
+            <div id="step-2">2</div>
+            <div id="bar2"></div>
+            <div id="step-3">3</div>
+        </div>
+        <div id='page-1'>
+            <h1 class="pageheading">CREATE ACCOUNT</h1>
+            <form action="#" onsubmit="submit1()">
+            <div class="input-group">
+                <input id='email' type="email" placeholder="EMAIL" required/>
+            </div>
+            <div class="input-group">
+                <input id="pass1" type="password" placeholder="PASSWORD"required autocomplete="on"/>
+            </div>
+            <div class="input-group">
+                <input  id='pass2' type="password" placeholder="CONFIRM PASSWORD" required autocomplete="on"/>
+            </div>
+            <div class="input-group">
+                <button   id="submit-1" type="submit">Submit</button>
+            </div>
+        </form>
+
+        </div>
+        <div id='page-2'>
+            <h1 class="pageheading">SOCIAL ACCOUNT</h1>
+            <form action="#" onsubmit="submit2()">
+            <div class="input-group">
+                <input id='fb' type="text" placeholder="Facebook" required/>
+            </div>
+            <div class="input-group">
+                <input id="linkedin" type="text" placeholder="LinkedIn"required/>
+            </div>
+            
+            <div class="input-group">
+                <button  id="prev-1"  type="button" onclick="prev1()">Previous</button>
+           
+                <button  id="submit-2">Submit</button>
+            </div>
+        </form>
+
+        </div>
+        <div id='page-3'>
+            <h1 class="pageheading">PERSONAL DETAILS</h1>
+            <form action="#" onsubmit="submit3()">
+            <div class="input-group">
+                <input id='FName' type="text" placeholder="First Name" required/>
+            </div>
+            <div class="input-group">
+                <input id="LName" type="text" placeholder="Last Name"required/>
+            </div>
+            
+            <div class="input-group">
+                <button  id="prev-2" type="button" onclick="prev2()">Previous</button>
+                <button  id="submit-3" type="submit">Submit</button>
+            </div>
+        </form>
+
+        </div>
+        <div id='page-4'>
+            <h1 class="pageheading">Thank You for reaching us</h1>
+        </div>
+    </div>
+    
+</div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
